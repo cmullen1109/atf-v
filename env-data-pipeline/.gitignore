@@ -1,0 +1,10 @@
+# OSINT pipeline
+env-data-pipeline/venv/
+env-data-pipeline/.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
