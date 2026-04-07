@@ -49,9 +49,7 @@ Ingestion Layer (Python clients)
 ↓
 Minimal standardization (timestamps, source tagging)
 ↓
-CSV generation
-↓
-S3 Raw Data Lake (partitioned)
+CSV generation and download
 ↓
 Downstream ETL and analytics (Palantir Foundry)
 
@@ -90,7 +88,7 @@ The schema is intentionally minimal to defer transformation, enrichment, and dat
 
 ## Storage Strategy
 
-Data is written to Amazon S3 using a partitioned layout:
+Data is written locally using a partitioned layout:
 
 s3://env-firedata-raw/
 ├── firms/
